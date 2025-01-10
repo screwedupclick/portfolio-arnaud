@@ -6,17 +6,17 @@ h1, p {
     color: whitesmoke;
 }
 
-.nav-link {
-    --c: #d4af37;
-    line-height: 1.2em;
-    background:
-    conic-gradient(from -135deg at 100% 50% var(--c) 9°deg, #000) 0 var(--p, 0%) / var(--s, 0%) 200% no-repeat,
-    conic-gradient(from -135deg at 1.2em 50%, #0000 90deg, var(--c) 0)
-    100% var(--p, 0%) / var(--s, 0%) 200% no-repeat;
-    transition: background-size .4s, background-position 0s;
+.nav {
+    background-color: transparent;
 }
 
-.nav-link:hover {
-    --p: 100%;
-    --s: calc(50%, .6em);
-}
+.nav-link {
+    --c: no-repeat linear-gradient(#1095c1 0 0);
+    background: 
+      var(--c) calc(-101% + var(--i,0)*101%) 100% / 50.1% calc(100%*var(--i,0) + .08em),
+      var(--c) calc( 201% - var(--i,0)*101%) 0    / 50.1% calc(100%*var(--i,0) + .08em);
+    transition: .3s calc(var(--i,0)*.3s), background-position .3s calc(.3s - var(--i,0)*.3s);
+  }
+  .nav-link:hover {
+    --i: 1;
+  }
