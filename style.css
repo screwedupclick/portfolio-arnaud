@@ -1,5 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #050203;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 h1, p {
@@ -126,16 +136,16 @@ ul {
     background-color: #ff0000;
 }
 
-h2 {
+.effect {
     color: #18272F;
     position: relative;
     text-decoration: none;
 }
 
-h2::before {
+.effect::before {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 84%;
     height: 4px;
     border-radius: 4px;
     background-color: #18272F;
@@ -145,7 +155,109 @@ h2::before {
     transform: scaleX(0);
     transition: transform .3s ease-in-out;
 }
-h2:hover::before {
+
+.effect:hover::before {
     transform-origin: left;
     transform: scaleX(1);
+}
+
+img {
+    -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
+    mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
+    -webkit-mask-size: 800%;
+    mask-size: 800%;
+    -webkit-mask-position: 0;
+    mask-position: 0;
+}
+
+img:hover {
+    transition: mask-position 2s ease,-webkit-mask-position 2s ease;
+    -webkit-mask-position: 120%;
+    mask-position: 120%;
+    opacity: 1;
+}
+
+.effect__2 {
+    color: whitesmoke;
+}
+
+.section__about {
+    background-color: #dcdcdc;
+}
+
+/* SECTION SKILLS*/
+
+.inner {
+    padding-top: 5%;
+}
+
+.header {
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+}
+
+.header:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+}
+
+.container__2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.skill-box {
+    padding: 1rem;
+    color: #ddd;
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-titel:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 35px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.skill-icon {
+    width: 50px;
+}
+
+@media screen and (max-width: 990px){
+    .container__2 {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+}
+
+/* 1179×2556 pixels at 460ppi */
+@media only screen 
+    and (width: 393px) 
+    and (height: 852px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+        .container__2 {
+            grid-template-columns: repeat 1fr;
+    }
 }
