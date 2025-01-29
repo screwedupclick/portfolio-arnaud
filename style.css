@@ -149,7 +149,7 @@ ul {
     height: 4px;
     border-radius: 4px;
     background-color: #18272F;
-    bottom: 0;
+    bottom: -3px;
     left: 0;
     transform-origin: right;
     transform: scaleX(0);
@@ -188,7 +188,8 @@ img:hover {
 /* SECTION SKILLS*/
 
 .inner {
-    padding-top: 5%;
+    padding-top: 2%;
+    margin-bottom: 2%;
 }
 
 .header {
@@ -196,6 +197,7 @@ img:hover {
     color: #fff;
     padding: 1rem;
     position: relative;
+    margin-bottom: 3%;
 }
 
 .header:after {
@@ -219,7 +221,7 @@ img:hover {
 }
 
 .skill-box {
-    padding: 1rem;
+    padding: 2rem;
     color: #ddd;
 }
 
@@ -227,8 +229,8 @@ img:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 .skill-titel:after {
@@ -245,6 +247,27 @@ img:hover {
     width: 50px;
 }
 
+img .img__2 {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img .img__2:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 90px;
+    background-color: rgba(red, green, blue, alpha);
+}
+
 @media screen and (max-width: 990px){
     .container__2 {
         grid-template-columns: repeat(2, 1fr);
@@ -252,7 +275,6 @@ img:hover {
     }
 }
 
-/* 1179×2556 pixels at 460ppi */
 @media only screen 
     and (width: 393px) 
     and (height: 852px) 
@@ -261,3 +283,7 @@ img:hover {
             grid-template-columns: repeat 1fr;
     }
 }
+
+/* PROJECTS SECTION */ 
+
+/* FOOTER SECTION */
