@@ -146,3 +146,46 @@ nav a.active {
   font-size: 1.8rem;
   font-weight: 500;
 }
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--couleur-principale);
+  display: none;
+}
+
+@media (max-width: 995px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 40%;
+    border-left: 3px solid var(--couleur-principale);
+    border-bottom: 3px solid var(--couleur-principale);
+    border-bottom-left-radius: 2rem;
+    padding: 1rem 3%;
+    background-color: var(--couleur-secondaire);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  .navbar .active {
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  .navbar a:hover,
+  .navbar a.active {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid var(--couleur-principale);
+  }
+}
+
+section {
+  min-height: 100vh;
+}
