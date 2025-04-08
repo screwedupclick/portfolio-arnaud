@@ -3,6 +3,7 @@
   --couleur-primaire-bis: #d7c9ae; /* akaroa */
   --couleur-texte: #a68763; /* barley corn */
   --couleur-secondaire: #eae0d2; /* white rock */
+  --couleur-tan: #d2b48c; /* TAN */
 }
 
 * {
@@ -122,6 +123,10 @@ span {
   color: var(--couleur-texte);
 }
 
+.home__content h1 {
+  color: var(--couleur-secondaire);
+}
+
 .home__content h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -130,7 +135,7 @@ span {
 
 .home__content p {
   font-size: 1.6rem;
-  color: var(--couleur-texte);
+  color: var(--couleur-tan);
 }
 
 .home__logo {
@@ -142,7 +147,6 @@ span {
   width: 32vw;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--couleur-primaire-bis);
-  cursor: pointer;
   transition: 0.2s ease;
 }
 
@@ -191,8 +195,9 @@ span {
 
 .type__text span::before {
   content: "Web Developper";
+  margin-left: 5px;
   color: var(--couleur-primaire-bis);
-  animation: words 20s infinite;
+  border-bottom: 3px solid var(--couleur-texte);
 }
 
 .type__text span::after {
