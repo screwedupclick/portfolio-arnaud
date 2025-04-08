@@ -26,7 +26,7 @@ html {
 
 header {
   margin-top: 20px;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
@@ -130,6 +130,7 @@ span {
 
 .home__content p {
   font-size: 1.6rem;
+  color: var(--couleur-texte);
 }
 
 .home__logo {
@@ -140,7 +141,7 @@ span {
   position: relative;
   width: 32vw;
   border-radius: 50%;
-  box-shadow: 0 0 25px;
+  box-shadow: 0 0 25px var(--couleur-primaire-bis);
   cursor: pointer;
   transition: 0.2s ease;
 }
@@ -153,10 +154,11 @@ span {
   height: 4rem;
   background-color: var(--couleur-secondaire);
   border: 0.2rem solid var(--couleur-texte);
-  font-size: 1rem;
+  font-size: 2rem;
   border-radius: 50%;
   margin: 3rem 1.5rem 3rem;
   transition: 0.3s ease;
+  color: var(--couleur-principale);
 }
 
 .btn {
@@ -189,7 +191,7 @@ span {
 
 .type__text span::before {
   content: "Web Developper";
-  color: var(--couleur-texte);
+  color: var(--couleur-primaire-bis);
   animation: words 20s infinite;
 }
 
@@ -225,7 +227,7 @@ span {
   }
 
   .home__logo img {
-    width: 70vh;
+    width: 60vh;
     margin-top: 4rem;
   }
 }
