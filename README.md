@@ -2,4 +2,4 @@
 
 Création d'un portfolio pour mes projets de dev web. 
 
-Utilisation de: HTML, CSS, BOOTSTRAP 5
+Utilisation de: HTML, CSS et JAVASCRIPT (WIP)
