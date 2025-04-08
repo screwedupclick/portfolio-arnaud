@@ -3,43 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Arnaud Scrivo</title>
+    <title>Portfolio Arnaud SCRIVO</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <a href="#" class="logo">Arnaud</a>
 
-      <nav>
-        <a href="#" class="active">Home</a>
-        <a href="#" class="active">Service</a>
-        <a href="#" class="active">Skills</a>
-        <a href="#" class="active">CV</a>
-        <a href="#" class="active">Projets</a>
-        <a href="#" class="active">Contact</a>
+      <div class="bx bx-menu" id="menu__icon"></div>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
+
     <section class="home" id="home">
-      <div class="home__img">
-        <img src="pfp.jpg" alt="photo de profil" />
-        <div>
-          <div class="home__content">
-            <h1>Bonjour c'est <span>Arnaud</span></h1>
-            <h3 class="typing__text">Je suis <span>Web Développeur</span></h3>
-            <div class="social__icons">
-              <a href="https://github.com/screwedupclick"
-                ><i class="fa-brands fa-github"></i>Github</a
-              >
-              <a href="https://www.linkedin.com/in/arnaudscrivo/"
-                ><i class="fa-brands fa-linkedin"></i>Linkedin</a
-              >
-              <a href="https://www.instagram.com/ftp_smoketreez/"
-                ><i class="fa-brands fa-instagram"></i>Instagram</a
-              >
-              <a href="#" class="btn">Contactez-moi</a>
-            </div>
-          </div>
+      <div class="home__content">
+        <h1>Bonjour, je suis <span>Arnaud Scrivo</span></h1>
+        <div class="text__animate">
+          <h3>Frontend Developper</h3>
         </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+          exercitationem voluptas suscipit rem nesciunt a! Similique animi quos
+          tenetur! Nesciunt quod quibusdam accusantium provident ducimus iure
+          possimus debitis harum ipsum.
+        </p>
+
+        <div class="btn__box">
+          <a href="#" class="btn">Contactez-moi</a>
+        </div>
+      </div>
+
+      <div class="home__sci">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </section>
   </body>
