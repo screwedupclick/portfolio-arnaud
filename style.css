@@ -324,6 +324,31 @@ span {
   }
 }
 
+#zenText {
+  color: var(--couleur-texte);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease, transform 2s ease;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#zenText.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: breathing 4s ease-in-out infinite;
+}
+
+@keyframes breathing {
+  0%,
+  100% {
+    letter-spacing: 1px;
+  }
+  50% {
+    letter-spacing: 3px;
+  }
+}
+
 .skills__content h2 {
   font-size: 5rem;
   margin-bottom: 1rem;
@@ -356,7 +381,6 @@ span {
   font-size: 5rem;
   border-radius: 50%;
   margin: 3rem 1.5rem 3rem;
-  transition: 0.3s ease;
   color: var(--couleur-principale);
 }
 
@@ -364,19 +388,19 @@ span {
   .skills__icons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* ou center si tu veux centré */
+    justify-content: space-between;
     gap: 20px;
   }
 
   .skills__icons > * {
-    width: calc(50% - 10px); /* Deux colonnes, avec gap compensé */
+    width: calc(50% - 10px);
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .skills__icons span {
-    max-width: 100px; /* ou la taille que tu veux */
-    height: auto; /* pour ne pas étirer */
+    max-width: 100px;
+    height: auto;
   }
 }
