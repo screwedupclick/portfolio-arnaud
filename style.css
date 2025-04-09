@@ -230,13 +230,19 @@ span {
     font-size: 2.5rem;
   }
 
-  .home__content h1 {
+  .home__content h1,
+  .about__content {
     font-size: 5rem;
   }
 
   .home__logo img {
     width: 60vh;
     margin-top: 4rem;
+  }
+
+  .about__logo img {
+    width: 60vh;
+    margin-top: 0.5rem;
   }
 }
 
@@ -262,7 +268,7 @@ span {
 }
 
 .about__content p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: var(--couleur-tan);
 }
 
@@ -276,4 +282,10 @@ span {
 
 .span__about {
   color: var(--couleur-secondaire);
+  border-bottom: 3px solid var(--couleur-tan);
+}
+
+.span__career {
+  color: var(--couleur-secondaire);
+  border-bottom: 3px solid var(--couleur-primaire-bis);
 }
