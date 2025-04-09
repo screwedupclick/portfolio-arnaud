@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -28,7 +29,7 @@
 
     <section class="home">
       <div class="home__logo">
-        <img src="img/pfp.jpg" alt="photo de profil" />
+        <img id="nightVisionImg" src="img/pfp.jpg" alt="photo de profil" />
       </div>
       <div class="home__content">
         <h1>Bonjour, je suis <span>Arnaud</span></h1>
@@ -52,6 +53,7 @@
           <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
         <a href="#" class="btn">Hire me</a>
+        <button class="btn" onclick="toggleNightVision()">Night Vision</button>
       </div>
     </section>
 
