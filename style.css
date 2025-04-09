@@ -1,8 +1,8 @@
 :root {
   --couleur-principale: #2d2d2d; /* mine shaft */
-  --couleur-primaire-bis: #d7c9ae; /* akaroa */
+  --couleur-akaora: #d7c9ae; /* akaroa */
   --couleur-texte: #a68763; /* barley corn */
-  --couleur-secondaire: #eae0d2; /* white rock */
+  --couleur-white-rock: #eae0d2; /* white rock */
   --couleur-tan: #d2b48c; /* TAN */
 }
 
@@ -63,8 +63,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  color: var(--couleur-primaire-bis);
-  border-bottom: 3px solid var(--couleur-primaire-bis);
+  color: var(--couleur-akaora);
+  border-bottom: 3px solid var(--couleur-akaora);
 }
 
 @media (max-width: 995px) {
@@ -74,11 +74,11 @@ nav a.active {
     top: 0;
     right: 0;
     width: 40%;
-    border-left: 3px solid var(--couleur-secondaire);
+    border-left: 3px solid var(--couleur-white-rock);
     border-bottom: 3px solid var(--couleur-texte);
     border-top-left-radius: 2rem;
     padding: 1rem solid;
-    background-color: var(--couleur-primaire-bis);
+    background-color: var(--couleur-akaora);
     border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
   }
 
@@ -124,7 +124,7 @@ span {
 }
 
 .home__content h1 {
-  color: var(--couleur-secondaire);
+  color: var(--couleur-white-rock);
 }
 
 .home__content h3 {
@@ -146,7 +146,7 @@ span {
   position: relative;
   width: 32vw;
   border-radius: 50%;
-  box-shadow: 0 0 25px var(--couleur-primaire-bis);
+  box-shadow: 0 0 25px var(--couleur-akaora);
   transition: 0.2s ease;
 }
 
@@ -156,7 +156,7 @@ span {
   align-items: center;
   width: 4rem;
   height: 4rem;
-  background-color: var(--couleur-secondaire);
+  background-color: var(--couleur-white-rock);
   border: 0.2rem solid var(--couleur-texte);
   font-size: 2rem;
   border-radius: 50%;
@@ -168,7 +168,7 @@ span {
 .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
-  background-color: var(--couleur-primaire-bis);
+  background-color: var(--couleur-akaora);
   border-radius: 4rem;
   font-size: 1.6rem;
   letter-spacing: 0.3rem;
@@ -196,7 +196,7 @@ span {
 .type__text span::before {
   content: "Web Developper";
   margin-left: 5px;
-  color: var(--couleur-primaire-bis);
+  color: var(--couleur-akaora);
   border-bottom: 3px solid var(--couleur-texte);
 }
 
@@ -219,10 +219,13 @@ span {
 }
 
 @media (max-width: 995px) {
-  .home,
-  .about {
+  .home {
     flex-direction: column;
-    margin: 5rem 4rem;
+    margin: 1rem 2rem;
+  }
+
+  .about {
+    margin: 0.5rem 2rem;
   }
 
   .home .home__content h3,
@@ -241,8 +244,7 @@ span {
   }
 
   .about__logo img {
-    width: 60vh;
-    margin-top: 0.5rem;
+    display: none;
   }
 }
 
@@ -264,7 +266,7 @@ span {
   font-size: 5rem;
   margin-bottom: 1rem;
   font-weight: 700;
-  color: var(--couleur-secondaire);
+  color: var(--couleur-white-rock);
 }
 
 .about__content p {
@@ -276,16 +278,16 @@ span {
   position: relative;
   width: 32vw;
   border-radius: 50%;
-  box-shadow: 0 0 25px var(--couleur-primaire-bis);
+  box-shadow: 0 0 25px var(--couleur-akaora);
   transition: 0.2s ease;
 }
 
 .span__about {
-  color: var(--couleur-secondaire);
+  color: var(--couleur-white-rock);
   border-bottom: 3px solid var(--couleur-tan);
 }
 
 .span__career {
-  color: var(--couleur-secondaire);
-  border-bottom: 3px solid var(--couleur-primaire-bis);
+  color: var(--couleur-white-rock);
+  border-bottom: 3px solid var(--couleur-akaora);
 }
