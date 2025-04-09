@@ -4,6 +4,7 @@
   --couleur-texte: #a68763; /* barley corn */
   --couleur-white-rock: #eae0d2; /* white rock */
   --couleur-tan: #d2b48c; /* TAN */
+  --couleur-border: #c84e2f;
 }
 
 * {
@@ -64,7 +65,7 @@ nav a {
 nav a:hover,
 nav a.active {
   color: var(--couleur-akaora);
-  border-bottom: 3px solid var(--couleur-akaora);
+  border-bottom: 3px solid var(--couleur-border);
 }
 
 @media (max-width: 995px) {
@@ -75,7 +76,7 @@ nav a.active {
     right: 0;
     width: 40%;
     border-left: 3px solid var(--couleur-white-rock);
-    border-bottom: 3px solid var(--couleur-texte);
+    border-bottom: 3px solid var(--couleur-border);
     border-top-left-radius: 2rem;
     padding: 1rem solid;
     background-color: var(--couleur-akaora);
@@ -96,7 +97,7 @@ nav a.active {
   nav a.active {
     padding: 1rem;
     border-radius: 0.5rem;
-    border-bottom: 0.5rem solid var(--couleur-principale);
+    border-bottom: 0.5rem solid var(--couleur-border);
   }
 }
 
@@ -157,7 +158,7 @@ span {
   width: 4rem;
   height: 4rem;
   background-color: var(--couleur-white-rock);
-  border: 0.2rem solid var(--couleur-texte);
+  border: 0.2rem solid var(--couleur-border);
   font-size: 2rem;
   border-radius: 50%;
   margin: 3rem 1.5rem 3rem;
@@ -173,7 +174,7 @@ span {
   font-size: 2rem;
   letter-spacing: 0.3rem;
   font-weight: 700;
-  border: 2px solid var(--couleur-texte);
+  border: 2px solid var(--couleur-border);
   transition: 0.3s ease;
   cursor: pointer;
   color: var(--couleur-texte);
@@ -197,7 +198,7 @@ span {
   content: "Web Developper";
   margin-left: 5px;
   color: var(--couleur-akaora);
-  border-bottom: 3px solid var(--couleur-texte);
+  border-bottom: 3px solid var(--couleur-border);
 }
 
 .type__text span::after {
@@ -206,7 +207,6 @@ span {
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
-  border-left: 3px solid var(--couleur-principale);
   right: -8;
   animation: cursor 0.6s infinite;
 }
@@ -284,28 +284,41 @@ span {
 
 .span__about {
   color: var(--couleur-white-rock);
-  border-bottom: 3px solid var(--couleur-tan);
+  border-bottom: 3px solid var(--couleur-border);
 }
 
 .span__career {
   color: var(--couleur-white-rock);
-  border-bottom: 3px solid var(--couleur-akaora);
+  border-bottom: 3px solid var(--couleur-border);
 }
 
-#nightVisionImg.night-vision {
-  filter: brightness(1.2) contrast(1.5) hue-rotate(90deg) saturate(2);
-  background-color: black;
-  box-shadow: 0 0 10px #00ff00;
+#glitchImg {
+  transition: 0.2s;
+  cursor: pointer;
 }
 
-#nightVisionImg.night-vision::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png"); /* bruit léger */
-  opacity: 0.1;
-  pointer-events: none;
+.glitch-active {
+  animation: glitch 0.5s steps(2, end) infinite;
+  filter: contrast(2) hue-rotate(180deg) saturate(3);
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-5px, 2px);
+  }
+  40% {
+    transform: translate(5px, -2px);
+  }
+  60% {
+    transform: translate(-3px, 1px);
+  }
+  80% {
+    transform: translate(3px, -1px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
