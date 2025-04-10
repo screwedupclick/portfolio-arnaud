@@ -55,6 +55,7 @@ header {
 
 nav a {
   font-size: 1.8rem;
+  font-family: "Oswald";
   color: var(--couleur-texte);
   margin-left: 4rem;
   font-weight: 500;
@@ -121,20 +122,24 @@ section {
 }
 
 span {
+  font-family: "Barlow";
   color: var(--couleur-texte);
 }
 
 .home__content h1 {
+  font-family: "Oswald";
   color: var(--couleur-white-rock);
 }
 
 .home__content h3 {
+  font-family: "Oswald";
   font-size: 1.8rem;
   margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .home__content p {
+  font-family: "Barlow";
   font-size: 1.6rem;
   color: var(--couleur-tan);
 }
@@ -192,6 +197,7 @@ span {
 }
 
 .type__text span {
+  font-family: "Barlow";
   position: relative;
 }
 
@@ -264,6 +270,7 @@ span {
 }
 
 .about__content h2 {
+  font-family: "Oswald";
   font-size: 5rem;
   margin-bottom: 1rem;
   font-weight: 700;
@@ -271,6 +278,7 @@ span {
 }
 
 .about__content p {
+  font-family: "Barlow";
   font-size: 1.8rem;
   color: var(--couleur-tan);
 }
@@ -284,6 +292,7 @@ span {
 }
 
 .span__about {
+  font-family: "Barlow";
   color: var(--couleur-white-rock);
   border-bottom: 3px solid var(--couleur-border);
 }
@@ -350,6 +359,7 @@ span {
 }
 
 .skills__content h2 {
+  font-family: "Oswald";
   font-size: 5rem;
   margin-bottom: 1rem;
   font-weight: 700;
@@ -422,6 +432,7 @@ span {
 }
 
 .project__content h2 {
+  font-family: "Oswald";
   display: flex;
   justify-content: center;
   align-items: center;
