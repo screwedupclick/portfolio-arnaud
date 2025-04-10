@@ -196,7 +196,7 @@ span {
 }
 
 .type__text span::before {
-  content: "Web Developper";
+  content: "Web Developper Junior";
   margin-left: 5px;
   color: var(--couleur-akaora);
   border-bottom: 3px solid var(--couleur-border);
